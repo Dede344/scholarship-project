@@ -7,13 +7,15 @@
 body{font-family: sans-serif;
     align-items: center;
     justify-content: center;
-    background-color: darkslategrey;
+    background-color: white;
 
 }
 
-.heading{width: 100%;
-    height: 100%;
-    background-color: rgb(237, 231, 231);
+.heading{width: 70%;
+    background-color: rgb(196, 196, 201);
+    justify-content: space-between;
+    margin: auto;
+    
 }
 .logo{
     display: block;
@@ -176,12 +178,12 @@ h5{
     align-items: center;
 }
 #sub_1,#sub_2,#sub_3,#sub_4,#sub_5, #sub_6, #sub_7, #sub_8, #sub_9{
-    width: 80%;
+    width: 50%;
     padding: 10px;
     
 }
 #scores1, #scores2, #scores3, #scores4, #scores5, #scores6, #scores7, #scores8, #scores9{
-    width: 80%;
+    width: 50%;
     padding: 10px;
 }
 
@@ -192,6 +194,42 @@ h5{
 
 #btn{
     padding: 5px 10px
+}
+
+@media (max-width: 450px){
+    .logo h1{
+        font-size: 28px !important;
+    }
+
+    .subject1, .subject2, .subject3, .subject4, .subject5, .subject6, .subject7, .subject8, .subject9{
+        display: block;
+    }
+
+    #scores1, #scores2, #scores3, #scores4, #scores5, #scores6, #scores7, #scores8, #scores9{
+        margin-left: 75px;
+        border-radius: 4px;
+    }
+    #sub_1,#sub_2,#sub_3,#sub_4,#sub_5, #sub_6, #sub_7, #sub_8, #sub_9{
+    border-radius: 4px;
+    }
+    }
+
+@media (max-width: 375px){
+    .logo h1{
+        font-size:25px !important;
+    }
+    .subject1, .subject2, .subject3, .subject4, .subject5, .subject6, .subject7, .subject8, .subject9{
+        display: block;
+    }
+
+    #scores1, #scores2, #scores3, #scores4, #scores5, #scores6, #scores7, #scores8, #scores9{
+        margin-left: 55px;
+        border-radius: 4px;
+    }
+    #sub_1,#sub_2,#sub_3,#sub_4,#sub_5, #sub_6, #sub_7, #sub_8, #sub_9{
+    border-radius: 4px;
+    }
+
 }
 
 @media screen and (max-width: 320px){
@@ -291,6 +329,18 @@ h5{
         text-align: center;
         padding-left: 0px;
     }
+    .subject1, .subject2, .subject3, .subject4, .subject5, .subject6, .subject7, .subject8, .subject9{
+        display: block;
+    }
+
+    #scores1, #scores2, #scores3, #scores4, #scores5, #scores6, #scores7, #scores8, #scores9{
+        margin-left: 55px;
+        border-radius: 4px;
+    }
+    #sub_1,#sub_2,#sub_3,#sub_4,#sub_5, #sub_6, #sub_7, #sub_8, #sub_9{
+    border-radius: 4px;
+    }
 
 }  
+
 

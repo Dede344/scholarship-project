@@ -361,11 +361,131 @@ function process(){
     endService()
 }
 
-let subjectType =["Select Option", "Accounting", "Biology", "Economics", "Commerce", "Chemistry", "Government", "Physics", "Geography", "Fine Art", "History", "Agricultural Science", "Literature"]
-console.log(subjectType);
+let subjectInfo =["Select Option", "Accounting", "Biology", "Economics", "Commerce", "Chemistry", "Government", "Physics", "Geography", "Fine Art", "History", "Agricultural Science", "Literature"];
 
+function course3Select(){
+    let uniqueOption = new Set();
+    subjectInfo.forEach (r => uniqueOption.add(r))
+    let courseOption = [...uniqueOption];
 
+    sub_3.innerHTML = '';
+    courseOption.forEach(i => {
+        let option = document.createElement('option')
+        option.textContent = i;
+        sub_3.appendChild(option);
+    });
+    sub_3.addEventListener('change', ()=>{
+        let subj = sub_3.value;
+        course4Select(courseOption, subj)
+    });
 
+}
+
+function course4Select(row, col){
+    let filterSubject = row.filter(r => r !=col);
+    let uniqueOption1 = new Set();
+    filterSubject.forEach(r => uniqueOption1.add(r));
+    let courseOption1 = [...uniqueOption1]
+    
+    sub_4.innerHTML = '';
+    courseOption1.forEach(i => {
+        let option = document.createElement('option')
+        option.textContent = i;
+        sub_4.appendChild(option);
+    });
+    sub_4.addEventListener('change', ()=>{
+        let subj2 = sub_4.value;
+        course5Select(courseOption1, subj2)
+    });
+}
+
+function course5Select(row, col){
+    let filterSubject = row.filter(r => r !=col);
+    let uniqueOption1 = new Set();
+    filterSubject.forEach(r => uniqueOption1.add(r));
+    let courseOption1 = [...uniqueOption1]
+    
+    sub_5.innerHTML = '';
+    courseOption1.forEach(i => {
+        let option = document.createElement('option')
+        option.textContent = i;
+        sub_5.appendChild(option);
+    });
+    sub_5.addEventListener('change', ()=>{
+        let subj2 = sub_5.value;
+        course6Select(courseOption1, subj2)
+    });
+}
+
+function course6Select(row, col){
+    let filterSubject = row.filter(r => r !=col);
+    let uniqueOption1 = new Set();
+    filterSubject.forEach(r => uniqueOption1.add(r));
+    let courseOption1 = [...uniqueOption1]
+    
+    sub_6.innerHTML = '';
+    courseOption1.forEach(i => {
+        let option = document.createElement('option')
+        option.textContent = i;
+        sub_6.appendChild(option);
+    });
+    sub_6.addEventListener('change', ()=>{
+        let subj2 = sub_6.value;
+        course7Select(courseOption1, subj2)
+    });
+}
+
+function course7Select(row, col){
+    let filterSubject = row.filter(r => r !=col);
+    let uniqueOption1 = new Set();
+    filterSubject.forEach(r => uniqueOption1.add(r));
+    let courseOption1 = [...uniqueOption1]
+    
+    sub_7.innerHTML = '';
+    courseOption1.forEach(i => {
+        let option = document.createElement('option')
+        option.textContent = i;
+        sub_7.appendChild(option);
+    });
+    sub_7.addEventListener('change', ()=>{
+        let subj2 = sub_7.value;
+        course8Select(courseOption1, subj2)
+    });
+}
+
+function course8Select(row, col){
+    let filterSubject = row.filter(r => r !=col);
+    let uniqueOption1 = new Set();
+    filterSubject.forEach(r => uniqueOption1.add(r));
+    let courseOption1 = [...uniqueOption1]
+    
+    sub_8.innerHTML = '';
+    courseOption1.forEach(i => {
+        let option = document.createElement('option')
+        option.textContent = i;
+        sub_8.appendChild(option);
+    });
+    sub_4.addEventListener('change', ()=>{
+        let subj2 = sub_8.value;
+        course9Select(courseOption1, subj2)
+    });
+}
+
+function course9Select(row, col){
+    let filterSubject = row.filter(r => r !=col);
+    let uniqueOption1 = new Set();
+    filterSubject.forEach((index)=> uniqueOption1.add(index));
+    let courseOption1 = [...uniqueOption1]
+    
+    sub_9.innerHTML = '';
+    courseOption1.forEach(i => {
+        let option = document.createElement('option')
+        option.textContent = i;
+        sub_9.appendChild(option);
+    });
+}
+
+document.addEventListener('DOMContentLoaded', course3Select);
 
 function endService(){
     fname.value = ""
@@ -396,7 +516,6 @@ function endService(){
     scores6.value = ""
     scores7.value = ""
     scores8.value = ""
-    scores9.value = ""
-    
+    scores9.value = ""   
 
 }
