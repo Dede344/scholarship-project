@@ -465,7 +465,7 @@ function course8Select(row, col){
         option.textContent = i;
         sub_8.appendChild(option);
     });
-    sub_4.addEventListener('change', ()=>{
+    sub_8.addEventListener('change', ()=>{
         let subj2 = sub_8.value;
         course9Select(courseOption1, subj2)
     });
